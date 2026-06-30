@@ -1,76 +1,76 @@
 # LessonManagedSystem
 
-A Java-based course management system with a Swing GUI interface.
+基于 Java Swing 的课程管理系统
 
-## Features
+## 功能特性
 
-- **Course Management**: Add, delete, and update course information
-- **Search Functionality**: Search courses by any field (course name, ID, type, grade, or teacher)
-- **Filter Options**: Filter courses by grade level and course type
-- **Data Persistence**: Course data stored in text files for persistence
+- **课程管理**: 添加、删除、修改课程信息
+- **搜索功能**: 支持按任意字段搜索课程（课程名、编号、类别、年级、教师姓名）
+- **筛选功能**: 按年级和课程类别筛选课程
+- **数据持久化**: 课程数据存储在文本文件中
 
-## Technology Stack
+## 技术栈
 
 - Java
-- Swing (GUI framework)
+- Swing (GUI 框架)
 
-## Project Structure
+## 项目结构
 
 ```
 src/
-  |- Main.java              # Application entry point
+  |- Main.java              # 程序入口
   |- edu/
      |- neuq/
         |- Class/
-        |  |- start.java    # Main controller, handles data loading/saving
-        |  |- Lesson.java   # Course data model
-        |  |- Cla.java      # Individual course entity
+        |  |- start.java    # 主控制器，处理数据加载和保存
+        |  |- Lesson.java   # 课程数据模型
+        |  |- Cla.java      # 单个课程实体
         |- Handler/
-        |  |- MainAction.java    # Main menu action handler
-        |  |- MainAction01.java  # Type filter handler
-        |  |- MainAction02.java  # Grade filter handler
-        |  |- addAction.java    # Add course handler
-        |  |- delAction.java    # Delete course handler
-        |  |- updateAction.java # Update course handler
+        |  |- MainAction.java    # 主菜单动作处理
+        |  |- MainAction01.java  # 类型筛选处理
+        |  |- MainAction02.java  # 年级筛选处理
+        |  |- addAction.java    # 添加课程处理
+        |  |- delAction.java    # 删除课程处理
+        |  |- updateAction.java # 修改课程处理
         |- UI/
-           |- MainMenu.java   # Main application window
-           |- addMenu.java    # Add course dialog
-           |- delMenu.java    # Delete course dialog
-           |- updateMenu.java # Update course dialog
+           |- MainMenu.java   # 主程序窗口
+           |- addMenu.java    # 添加课程对话框
+           |- delMenu.java    # 删除课程对话框
+           |- updateMenu.java # 修改课程对话框
 data/
-  |- name.txt      # Course names
-  |- ID.txt        # Course IDs
-  |- type.txt      # Course types (required/elective)
-  |- grade.txt     # Grade levels
-  |- teacher.txt   # Teacher names
+  |- name.txt      # 课程名称
+  |- ID.txt        # 课程编号
+  |- type.txt      # 课程类别（必修/选修）
+  |- grade.txt     # 开课年级
+  |- teacher.txt   # 教师姓名
 ```
 
-## Course Fields
+## 课程字段
 
-- Course Name
-- Course ID
-- Course Type (Required / Elective)
-- Grade Level (Freshman / Sophomore / Junior / Senior)
-- Teacher Name
+- 课程名称
+- 课程编号
+- 课程类别（必修 / 选修）
+- 开课年级（大一 / 大二 / 大三 / 大四）
+- 教师姓名
 
-## How to Run
+## 运行方法
 
-1. Ensure Java is installed
-2. Compile the source files:
+1. 确保已安装 Java
+2. 编译源文件:
    ```
    javac -d out src/*.java src/edu/neuq/**/*.java
    ```
-3. Run the application:
+3. 运行程序:
    ```
    java -cp out Main
    ```
 
-## Usage
+## 使用方法
 
-1. Launch the application to view the main course list
-2. Use "Add" button to add new courses
-3. Use "Delete" button to remove courses
-4. Use "Update" button to edit existing course information
-5. Use "Search" button to search for specific courses
-6. Use the dropdown filters to filter by grade or course type
-7. Click "Exit" to save and exit
+1. 启动程序查看主课程列表
+2. 点击"添加"按钮添加新课程
+3. 点击"删除"按钮删除课程
+4. 点击"修改"按钮编辑课程信息
+5. 点击"搜索"按钮搜索特定课程
+6. 使用下拉筛选框按年级或课程类型筛选
+7. 点击"退出"保存并退出

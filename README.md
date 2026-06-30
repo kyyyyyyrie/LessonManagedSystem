@@ -18,31 +18,31 @@ A Java-based course management system with a Swing GUI interface.
 
 ```
 src/
-├── Main.java                          # Application entry point
-├── edu/
-│   ├── neuq/
-│   │   ├── Class/
-│   │   │   ├── start.java             # Main controller, handles data loading/saving
-│   │   │   ├── Lesson.java            # Course data model
-│   │   │   └── Cla.java               # Individual course entity
-│   │   ├── Handler/
-│   │   │   ├── MainAction.java        # Main menu action handler
-│   │   │   ├── MainAction01.java      # Type filter handler
-│   │   │   ├── MainAction02.java      # Grade filter handler
-│   │   │   ├── addAction.java         # Add course handler
-│   │   │   ├── delAction.java         # Delete course handler
-│   │   │   └── updateAction.java      # Update course handler
-│   │   └── UI/
-│   │       ├── MainMenu.java          # Main application window
-│   │       ├── addMenu.java           # Add course dialog
-│   │       ├── delMenu.java           # Delete course dialog
-│   │       └── updateMenu.java        # Update course dialog
+  |- Main.java              # Application entry point
+  |- edu/
+     |- neuq/
+        |- Class/
+        |  |- start.java    # Main controller, handles data loading/saving
+        |  |- Lesson.java   # Course data model
+        |  |- Cla.java      # Individual course entity
+        |- Handler/
+        |  |- MainAction.java    # Main menu action handler
+        |  |- MainAction01.java  # Type filter handler
+        |  |- MainAction02.java  # Grade filter handler
+        |  |- addAction.java    # Add course handler
+        |  |- delAction.java    # Delete course handler
+        |  |- updateAction.java # Update course handler
+        |- UI/
+           |- MainMenu.java   # Main application window
+           |- addMenu.java    # Add course dialog
+           |- delMenu.java    # Delete course dialog
+           |- updateMenu.java # Update course dialog
 data/
-├── name.txt      # Course names
-├── ID.txt        # Course IDs
-├── type.txt      # Course types (required/elective)
-├── grade.txt     # Grade levels
-└── teacher.txt   # Teacher names
+  |- name.txt      # Course names
+  |- ID.txt        # Course IDs
+  |- type.txt      # Course types (required/elective)
+  |- grade.txt     # Grade levels
+  |- teacher.txt   # Teacher names
 ```
 
 ## Course Fields
@@ -68,9 +68,9 @@ data/
 ## Usage
 
 1. Launch the application to view the main course list
-2. Use "添加" to add new courses
-3. Use "删除" to remove courses
-4. Use "修改" to edit existing course information
-5. Use "搜索" to search for specific courses
+2. Use "Add" button to add new courses
+3. Use "Delete" button to remove courses
+4. Use "Update" button to edit existing course information
+5. Use "Search" button to search for specific courses
 6. Use the dropdown filters to filter by grade or course type
-7. Click "退出" to save and exit
+7. Click "Exit" to save and exit
